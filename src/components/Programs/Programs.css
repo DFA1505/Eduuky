@@ -1,50 +1,61 @@
-.programs{
-    margin:auto;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1px;
-    min-height: 600px;
+.programs {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px;
+  min-height: 600px;
 }
 
-.program img{
-    width: 500px;
-    border-radius: 10px;
-    display: block;
+.program img {
+  width: 500px;
+  border-radius: 10px;
+  display: block;
 }
 
-.program{
-    flex-basis: 31% ;
-    position: relative;
-    overflow: hidden;
+.program {
+  flex-basis: 31%;
+  position: relative;
+  overflow: hidden;
 }
 
-.caption{
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0,15,152,0.5);
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    cursor: pointer;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: transform 0.5s ease, opacity 0.5s ease;
+.caption {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 15, 152, 0.5);
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.program:hover .caption{
-    opacity: 1;
-    transform: translateY(0)
+.program:hover .caption {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.caption-icon{
-    font-size: 60px;
-    margin-bottom: 10px;
+.caption-icon {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1500px) {
+  .programs {
+    flex-direction: column;
+  }
+
+  .program {
+    flex-basis: 100%;
+    margin: 20px;
+  }
 }
